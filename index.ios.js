@@ -55,7 +55,7 @@ class HelloWorldApp extends Component {
     // };
 
     return (        
-        <View style={ { backgroundColor: 'powderblue' } } >
+        <View style={ { flexDirection: 'row', backgroundColor: 'powderblue' } } >
           <Text style={styles.bigblue}>Hello {this.state.showText ? this.props.name : "who?"} </Text>
            <Text style={styles.littleRed}>Hello {this.state.showText ? this.props.name : "who?"} </Text>
        </View>
