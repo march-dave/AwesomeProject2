@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     color: 'blue',
     fontWeight: 'bold',
     fontSize: 30,
-    flex: 2,
+    flex: 1,
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center'
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
   littleRed: {
     color: 'red',
     fontSize: 16,
-    flex: 1,
+    flex: 2,
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center'
@@ -55,7 +55,7 @@ class HelloWorldApp extends Component {
     // };
 
     return (        
-        <View style={ { flexDirection: 'row', backgroundColor: 'powderblue' } } >
+        <View style={ { flexDirection: 'column', backgroundColor: 'powderblue' } } >
           <Text style={styles.bigblue}>Hello {this.state.showText ? this.props.name : "who?"} </Text>
            <Text style={styles.littleRed}>Hello {this.state.showText ? this.props.name : "who?"} </Text>
        </View>
