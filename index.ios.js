@@ -19,16 +19,13 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 30,
     flex: 1,
-    flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center'
   },
 
   littleRed: {
     color: 'red',
-    fontSize: 16,
-    flex: 2,
-    flexDirection: 'column',
+    fontSize: 16,    
     alignItems: 'center',
     justifyContent: 'center'
   }
