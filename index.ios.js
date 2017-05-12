@@ -14,7 +14,7 @@ import {
 
 const styles = StyleSheet.create({
 
-  bigblue: {
+  bigBlue: {
     color: 'blue',
     fontWeight: 'bold',
     fontSize: 30,
@@ -53,7 +53,7 @@ class HelloWorldApp extends Component {
 
     return (        
         <View style={ { flexDirection: 'column', backgroundColor: 'powderblue' } } >
-          <Text style={styles.bigblue}>Hello {this.state.showText ? this.props.name : "who?"} </Text>
+          <Text style={styles.bigBlue}>Hello {this.state.showText ? this.props.name : "who?"} </Text>
            <Text style={styles.littleRed}>Hello {this.state.showText ? this.props.name : "who?"} </Text>
        </View>
       );    
