@@ -11,14 +11,13 @@ import {
   StyleSheet
 } from 'react-native';
 
-
 const styles = StyleSheet.create({
 
   bigBlue: {
     color: 'blue',
     fontWeight: 'bold',
     fontSize: 30,
-    flex: 1,
+    // flex: 1,
     alignItems: 'center',
     justifyContent: 'center'
   },
