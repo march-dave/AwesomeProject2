@@ -1,78 +1,85 @@
 import React, { Component } from 'react';
 import {
-  AppRegistry,
-  Image,
-  View,
-  Text,
+    AppRegistry,
+    Image,
+    View,
+    Text,
 
-  TextInput,
-  ScrollView,
+    TextInput,
+    ScrollView,
 
-  StyleSheet
+    StyleSheet
 } from 'react-native';
 
 const styles = StyleSheet.create({
 
-  bigBlue: {
-    color: 'blue',
-    fontWeight: 'bold',
-    fontSize: 30,
-    // flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center'
-  },
+    bigBlue: {
+        color: 'blue',
+        fontWeight: 'bold',
+        fontSize: 30,
+        // display: flex,
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
 
-  littleRed: {
-    color: 'red',
-    fontSize: 16,    
-    alignItems: 'center',
-    justifyContent: 'center'
-  }
+    littleRed: {
+        color: 'red',
+        fontSize: 16,
+        alignItems: 'center',
+        justifyContent: 'center'
+    }
 })
 
 class HelloWorldApp extends Component {
 
     constructor(props) {
-      super(props);
-      this.state = {showText: true};
+        super(props);
+        this.state = { showText: true };
 
-      setInterval( () => {
+        setInterval(() => {
 
-        this.setState( {showText: !this.state.showText })
+            this.setState({ showText: !this.state.showText })
 
-      }, 1000)
+        }, 1000)
 
     }
 
-  render() {
+    render() {
 
-    // let pic = {
-    //   uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Male_gorilla_in_SF_zoo.jpg/440px-Male_gorilla_in_SF_zoo.jpg'
-    // };
+        // let pic = {
+        //   uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Male_gorilla_in_SF_zoo.jpg/440px-Male_gorilla_in_SF_zoo.jpg'
+        // };
 
-    return (        
-        <View style={ { backgroundColor: 'powderblue' } } >
-          <Text style={styles.bigBlue}>Hello {this.state.showText ? this.props.name : "who?"} </Text>
-           <Text style={styles.littleRed}>Hello {this.state.showText ? this.props.name : "who?"} </Text>
-       </View>
-      );    
-  }
+        return ( <
+            View style = {
+                { backgroundColor: 'powderblue' } } >
+            <
+            Text style = { styles.bigBlue } > Hello { this.state.showText ? this.props.name : "who?" } < /Text> <
+            Text style = { styles.littleRed } > Hello { this.state.showText ? this.props.name : "who?" } < /Text> <
+            /View>
+        );
+    }
 }
 
 class HelloEveryone extends Component {
 
-  render() {
-    return (
-        <View style={ {alignItems: 'center'} } >
+    render() {
+        return ( <
+            View style = {
+                { alignItems: 'center' } } >
 
-          <HelloWorldApp name="Dave" />
-          <HelloWorldApp name="Art" />
-          <HelloWorldApp name="Kate" />
+            <
+            HelloWorldApp name = "Dave" / >
+            <
+            HelloWorldApp name = "Art" / >
+            <
+            HelloWorldApp name = "Kate" / >
 
-        </View>
+            <
+            /View>
 
-      );
-  }
+        );
+    }
 
 }
 
