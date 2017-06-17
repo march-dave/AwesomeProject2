@@ -7,7 +7,7 @@ import {
 
   TextInput,
   ScrollView,
-
+  Button,
   StyleSheet
 } from 'react-native';
 
@@ -69,6 +69,10 @@ class HelloEveryone extends Component {
   render() {
     return (
        <View style={{padding: 10}}>
+          <Button
+            onPress={this._onPressButton}
+            title="Press Me"
+          />
         <TextInput
           style={{height: 40}}
           placeholder="Type here to translate!"
