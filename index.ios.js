@@ -59,11 +59,17 @@ class HelloWorldApp extends Component {
     // };
 
     return (        
-        <View style={ { backgroundColor: 'powderblue' } } >
-          <Text style={styles.bigBlue}>Hello {this.state.showText ? this.props.name : "who?"} </Text>
-           <Text style={styles.littleRed}>Hello {this.state.showText ? this.props.name : "who?"} </Text>
-       </View>
-      );    
+        <View style={{
+        flex: 1,
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}>
+        <View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
+        <View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
+        <View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
+      </View>
+    );  
   }
 }
 
