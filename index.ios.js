@@ -68,10 +68,21 @@ class HelloWorldApp extends Component {
         <Text style={{padding: 10, fontSize: 42}}>
           {this.state.text.split(' ').map((word) => word && '🍕').join(' ')}
         </Text>
+
+        <Button
+          onPress={() => { Alert.alert('You tapped the button!')}}
+          title="Press Me"
+        />
       </View>
     );
   }
 }
+
+aozeten
+
+netzoa
+
+
 
 class HelloEveryone extends Component {
 
