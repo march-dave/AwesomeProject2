@@ -52,6 +52,10 @@ class HelloWorldApp extends Component {
 
     }
 
+    _onPressButton() {
+      Alert.alert('You tapped the button!');
+    }
+
   render() {
 
     // let pic = {
